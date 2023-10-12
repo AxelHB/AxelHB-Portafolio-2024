@@ -1,0 +1,263 @@
+.modal__lenguajes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    height: auto;
+}
+.modal--show-lenguajes {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+.modal__container-lenguajes {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 100%;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    text-align: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: transform .3s;
+    transition: var(--transition);
+    .modal__img {
+        width: 90%;
+        max-width: 300px;
+    }
+    .modal__title {
+        font-size: 2.5rem;
+    }
+    .modal__paragraph {
+        margin-bottom: 10px;
+    }
+    .modal__close-lenguajes {
+        color: white;
+        background-color: #f26250;
+        padding: 1em 3em;
+        border: 1px solid white;
+        border-radius: 6px;
+        display: inline-block;
+        font-weight: 300;
+        transition: background-color .3s;
+        &:hover {
+            color: #f26250;
+            background-color: white;
+        }
+    }
+}
+
+
+/*MODAL DE SKILL FRAMEWORK*/
+.modal__framework {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    height: auto;
+}
+.modal--show-framework {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+.modal__container-framework {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 100%;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    text-align: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: transform .3s;
+    transition: var(--transition);
+    .modal__img {
+        width: 100%;
+        max-width: 220px;
+    }
+    .modal__title {
+        font-size: 2.5rem;
+    }
+    .modal__paragraph {
+        margin-bottom: 10px;
+    }
+    .modal__close-framework {
+        color: white;
+        background-color: #f26250;
+        padding: 1em 3em;
+        border: 1px solid white;
+        border-radius: 6px;
+        display: inline-block;
+        font-weight: 300;
+        transition: background-color .3s;
+        &:hover {
+            color: #f26250;
+            background-color: white;
+        }
+    }
+}
+
+
+/*MODAL DE SKILL FRAMEWORK*/
+.modal__herramientas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+    height: auto;
+}
+.modal--show-herramientas {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .8s .8s;
+}
+.modal__container-herramientas {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 100%;
+    margin-top: 70px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    text-align: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: transform .3s;
+    transition: var(--transition);
+    .modal__img {
+        width: 90%;
+        max-width: 300px;
+    }
+    .modal__title {
+        font-size: 2.5rem;
+    }
+    .modal__paragraph {
+        margin-bottom: 10px;
+    }
+    .modal__close-herramientas {
+        color: white;
+        background-color: #f26250;
+        padding: 1em 3em;
+        border: 1px solid white;
+        border-radius: 6px;
+        display: inline-block;
+        font-weight: 300;
+        transition: background-color .3s;
+        &:hover {
+            color: #f26250;
+            background-color: white;
+        }
+    }
+}
+
+.skill-link_lenguaje,
+.skill-link_framework,
+.skill-link_herramientas {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/*EDICIÓN DE LOS BOTONES DE SKILLS*/
+.skill-link_lenguaje::before,
+.skill-link_framework::before,
+.skill-link_herramientas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #658aa0;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+}
+
+.skill-link_lenguaje:hover,
+.skill-link_framework:hover,
+.skill-link_herramientas:hover {
+    color: #e8e8e8;
+}
+
+.skill-link_lenguaje:hover::before,
+.skill-link_framework:hover::before,
+.skill-link_herramientas:hover::before {
+    width: 100%;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 800px) {
+    .modal__container-lenguajes,
+    .modal__container-framework,
+    .modal__container-framework {
+        padding: 2em 1.5em !important;
+    }
+
+    .modal__title {
+        font-size: 2rem !important;
+    }
+}

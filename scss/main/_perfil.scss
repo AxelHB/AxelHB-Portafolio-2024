@@ -1,0 +1,141 @@
+.perfil {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*EDICION DE PERFIL CON IMAGEN*/
+    .perfil__img {
+        position: relative;
+        img {
+            width: 280px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones de transformación y sombra */
+        }
+    }
+    .perfil__img:hover img {
+        transform: translateX(-5px) translateY(-5px) rotate(-2deg); /* Leve inclinación y elevación */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombras adicionales */
+    }
+    /*EDICION DEL CONTENEDOR DE CONTENIDO*/
+    .perfil__contenido {
+        width: 60%;
+    }
+    .perfil-contenido__titulos h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+        color: #183153;
+        text-shadow: 2px 2px #808080;
+    }
+        /*ANIMACION TITULO*/
+    /* Estilo base para el título */
+    .maquina {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    /* Simula el cursor parpadeante */
+    .maquina::after {
+        content: '|';
+        display: inline-block;
+        animation: blink-caret 0.7s step-end infinite;
+        vertical-align: middle;
+    }
+    
+    /* Animación del cursor parpadeante */
+    @keyframes blink-caret {
+        from, to {
+        opacity: 0;
+        }
+        50% {
+        opacity: 1;
+        }
+    }
+    /*CONTENIDO PARRAFO*/
+    .perfil-contenido__parrafo p {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+    /*CONTENIDO BOTON*/
+    .perfil-contenido__cv {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        .btn-perfil {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            background: #183153;
+            font-family: "Montserrat", sans-serif;
+            box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-perfil:after {
+            content: " ";
+            width: 0%;
+            height: 100%;
+            background: #658aa0;
+            position: absolute;
+            transition: all 0.4s ease-in-out;
+            right: 0;
+        }
+        
+        .btn-perfil:hover::after {
+            right: auto;
+            left: 0;
+            width: 100%;
+        }
+        
+        .btn-perfil span {
+            text-align: center;
+            text-decoration: none;
+            width: 100%;
+            padding: 18px 25px;
+            color: #fff;
+            font-size: 1.125em;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            z-index: 20;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .btn-perfil:hover span {
+            color: #183153;
+            animation: scaleUp 0.3s ease-in-out;
+        }
+        
+        @keyframes scaleUp {
+            0% {
+                    transform: scale(1);
+            }
+        
+            50% {
+                transform: scale(0.95);
+            }
+            
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+@media (max-width: 860px) {
+    #PERFIL {
+        height: auto;
+    }
+    .perfil {
+        padding-top: 80px;
+        flex-direction: column;
+        .perfil__contenido {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    
+}

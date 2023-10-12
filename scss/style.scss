@@ -1,0 +1,14 @@
+/*IMPORTS DEL RESET CSS*/
+@import "reset.scss";
+/*IMPORTS DEL BODY*/
+@import "body/header";
+@import "body/footer";
+/*IMPORTS DEL MAIN*/
+@import "main/perfil";
+@import "main/skills";
+/*MODAL SKILLS*/
+@import "main/skills-modal";
+@import "main/portafolio";
+@import "main/trabajo";
+@import "main/testimonios";
+@import "main/contacto";

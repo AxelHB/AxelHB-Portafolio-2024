@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--FAVICON-->
+        <link rel="shortcut icon" href="icons/favicon/Favicon.jpg" type="image/x-icon">
+        <!--ICONOS DEL HEADER-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--ICONOS-FOOTER-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--AOS Animate CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+        <!--Animate.style CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <!--SWIPER CSS-->
+        <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css">
+        <title>Portafolio AxelHB</title>
+        <!--HOJA DE ESTILOS-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header animate__animated animate__fadeInDown">
+            <a href="#" class="logo">AxelHB</a>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            <nav class="navbar">
+                <a href="#" style="--i:0;">Perfil</a>
+                <a href="#SKILLS" style="--i:1;">Skills</a>
+                <a href="#PORTAFOLIO" style="--i:2;">Portafolio</a>
+                <a href="#TRABAJO" style="--i:3;">Trabajo</a>
+                <a href="#TESTIMONIOS" style="--i:4;">Testimonios</a>
+                <a href="#CONTACTO" style="--i:5;">Contacto</a>
+            </nav>
+            <div class="navbar-redes">
+                <a href="https://www.linkedin.com/in/axel-henderson/" class="fa-brands fa-linkedin-in" target="_blank"></a>
+                <a href="https://github.com/AxelHB" class="fa-brands fa-github" target="_blank"></a>
+                <a href="https://dev.to/axelhb" class="fab fa-dev" target="_blank"></a>
+                <a href="https://www.instagram.com/_axelhenderson/" class="fa-brands fa-instagram" target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UCK5egQkAo75ru1zIuvgLGXA" class="fab fa-youtube" target="_blank"></a>
+            </div>
+        </header>
+
+        <main>
+            <aside id="WSP">
+                <a href="https://wa.me/message/IBDXRXSVM37CB1" target="_blank"><img src="icons/Whatsapp.png" alt="whatsapp"></a>
+            </aside>
+            <!--SECCION PERFIL-->
+            <section id="PERFIL">
+                <div class="perfil">
+                    <div class="perfil__img">
+                        <img src="images/perfil/Perfil.png" alt="imagen-perfil" class="animate__animated animate__fadeIn">
+                    </div>
+                    <div class="perfil__contenido">
+                        <div class="perfil-contenido__titulos">
+                            <h1 class="maquina">Axel Henderson<br>&lt;/Front-End Developer&gt;</h1>
+                        </div>
+                        <div class="perfil-contenido__parrafo">
+                            <p>¡Hola! Soy Axel, un apasionado Desarrollador Front End y Profesor con una profunda pasión por la Informática. Hoy en día, disfruto convirtiendo mi pasión en mi profesión y compartiéndola con otros al enseñar y crear experiencias web sorprendentes y funcionales.</p>
+                        </div>
+                        <div class="perfil-contenido__cv">
+                            <a href="CV/CV - Axel Henderson Bianchi.pdf" target="_blank">
+                                <button class="btn-perfil"> 
+                                    <span>DESCARGA CV</s>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--SECCION SKILLS-->
+            <section id="SKILLS">
+                <h1 class="h1-skills">Skills que más utilizo</h1> 
+                <div class="skills">
+                    <!--SKILL LENGUAJES-->
+                    <div class="skills-lenguajes">
+                        <div class="skill-logo_lenguaje"> <img src="icons/Skills/icon-lenguajes.png" alt=""></div>
+                        <div class="skill-titulo_lenguaje">
+                            <h1>Lenguajes</h1>
+                            <br>
+                            <p>Me gusta codificar cosas desde cero y disfruto dando vida a las ideas en el navegador.</p>
+                        </div>
+                        <div class="skill-cont_lenguaje">
+                            <ul>
+                                <li class="skill__lenguaje1"><img src="icons/Skills/lenguajes/html.png" alt="html"></li>
+                                <li class="skill__lenguaje2"><img src="icons/Skills/lenguajes/css.png" alt="css"></li>
+                                <li class="skill__lenguaje3"><img src="icons/Skills/lenguajes/javascript.png" alt="javascript"></li>
+                            </ul>
+                        </div>
+                        <div class="skill-boton_lenguaje"><a class="skill-link_lenguaje" href="#">Ver Más</a></div>
+                    </div>
+                    <!--SKILL FRAMEWORK-->
+                    <div class="skills-framework">
+                        <div class="skill-logo_framework"><img src="icons/Skills/icon-framework.png" alt=""></div>
+                        <div class="skill-titulo_framework">
+                            <h1>Frameworks y Librerías</h1>
+                            <br>
+                            <p>Valoro la estructura de contenido simple, los patrones de diseño limpios y las interacciones bien pensadas.</p>
+                        </div>
+                        <div class="skill-cont_framework">
+                            <ul>
+                                <li class="skill__lenguaje1"><img src="icons/Skills/frameworks/react.png" alt="react"></li>
+                                <li class="skill__lenguaje2"><img src="icons/Skills/frameworks/bootstrap.png" alt="bootstrap"></li>
+                                <li class="skill__lenguaje3"><img src="icons/Skills/frameworks/sass.png" alt="sass"></li>
+                                <li class="skill__lenguaje4"><img src="icons/Skills/frameworks/tailwind.png" alt="tailwind"></li>
+                            </ul>
+                        </div>
+                        <div class="skill-boton_framework"><a class="skill-link_framework" href="#">Ver Más</a></div>
+                    </div>
+                    <!--SKILL HERRAMIENTAS-->
+                    <div class="skills-herramientas">
+                        <div class="skill-logo_herramientas"><img src="icons/Skills/icon-herramientas.png" alt=""></div>
+                        <div class="skill-titulo_herramientas">
+                            <h1>Tecnologías y Herramientas</h1>
+                            <br>
+                            <p>En el mundo digital, tengo a mi disposición un conjunto de potentes herramientas que me permiten diseñar, construir, colaborar y comunicar de manera extraordinaria.</p>
+                        </div>
+                        <div class="skill-cont_herramientas">
+                            <ul>
+                                <li class="skill__lenguaje1"><img src="icons/Skills/herramientas/npm.png" alt="npm"></li>
+                                <li class="skill__lenguaje2"><img src="icons/Skills/herramientas/git.png" alt="git"></li>
+                                <li class="skill__lenguaje3"><img src="icons/Skills/herramientas/github.png" alt="github"></li>
+                                <li class="skill__lenguaje4"><img src="icons/Skills/herramientas/wordpress.png" alt="wordpress"></li>
+                                <li class="skill__lenguaje5"><img src="icons/Skills/herramientas/figma.png" alt="figma"></li>
+                                <li class="skill__lenguaje6"><img src="icons/Skills/herramientas/notion.png" alt="notion"></li>
+                                <li class="skill__lenguaje7"><img src="icons/Skills/herramientas/trello.png" alt="trello"></li>
+                                <li class="skill__lenguaje8"><img src="icons/Skills/herramientas/slack.png" alt="slack"></li>
+                            </ul>
+                        </div>
+                        <div class="skill-boton_herramientas"><a class="skill-link_herramientas" href="#">Ver Más</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--MODAL SKILLS-->
+            <section class="modal__lenguajes">
+                <div class="modal__container-lenguajes">
+                    <img src="modal/skills/lenguajes/lenguaje.png" class="modal__img" alt="">
+                    <h2 class="modal__title">¡La Base de mis Proyectos!</h2>
+                    <p class="modal__paragraph"><p>"<b>Trabajo como front-end developer</b>, lo que significa que uso <b>HTML</b> para construir la estructura de las páginas web, <b>CSS</b> para darles estilo y <b>JavaScript</b> para hacerlas interactivas. Puedo crear desde diseños atractivos hasta animaciones y aplicaciones web completas con estos tres lenguajes."</p></p>
+                    <a href="" class="modal__close-lenguajes">Cerrar Modal</a>
+                </div>
+            </section>
+
+
+            <section class="modal__framework">
+                <div class="modal__container-framework">
+                    <img src="modal/skills/lenguajes/lenguaje.png" class="modal__img" alt="">
+                    <h2 class="modal__title">¡Librerías que más uso!</h2>
+                    <p class="modal__paragraph">"<b>Como front-end developer</b>, mi pasión es construir experiencias web excepcionales. <b>Utilizo herramientas poderosas como React, Bootstrap, Sass y Tailwind CSS.</b> Con <b>React</b>, puedo crear aplicaciones web dinámicas y reactivas que sorprenden a los usuarios. <b>Bootstrap</b> agiliza el proceso de diseño y me permite lograr resultados atractivos de manera eficiente. Con <b>Sass</b>, mi código CSS es más limpio y mantenible, y <b>Tailwind CSS</b> acelera el diseño con sus clases predefinidas. <b>En resumen, mi enfoque en estas librerías y frameworks me permite construir sitios web atractivos, interactivos y altamente funcionales con facilidad.</b>"</p>
+                    <a href="" class="modal__close-framework">Cerrar Modal</a>
+                </div>
+            </section>
+
+
+            <section class="modal__herramientas">
+                <div class="modal__container-herramientas">
+                    <img src="modal/skills/lenguajes/lenguaje.png" class="modal__img" alt="">
+                    <h2 class="modal__title">¡Mi Kit de Herramientas!</h2>
+                    <p class="modal__paragraph">"En mi kit de herramientas digital, Git y GitHub son mis aliados para la gestión de versiones y colaboración. NPM maneja las dependencias eficazmente, Figma es mi lienzo creativo, WordPress mi plataforma web confiable. Trello y Notion me mantienen organizado, y Slack es mi canal de comunicación ágil. Estas herramientas hacen que mi trabajo sea impecable y eficiente en el mundo digital."</p>
+                    <a href="" class="modal__close-herramientas">Cerrar Modal</a>
+                </div>
+            </section>
+
+
+
+
+            <!--SECCION PORTAFOLIO-->
+            <section id="PORTAFOLIO">
+                <h1 class="h1-portafolio">Algunos de mis Proyectos</h1>
+                <div class="portafolio">
+                    <div class="card__portafolio">
+                        <img src="images/portafolio/fitito.jpg" alt="" class="card-img">
+                        <div class="card-portafolio__contenido">
+                            <h1 class="titulo">Fiat 600R</h1>
+                            <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur modi totam aspernatur.</p>
+                            <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, sequi!</p>
+                            <button class="btn-info">Ir al Sitio</button>
+                        </div>
+                    </div>
+                    <div class="card__portafolio">
+                        <img src="images/portafolio/cerati.jpg" alt="" class="card-img">
+                        <div class="card-portafolio__contenido">
+                            <h1 class="titulo">Gustavo Cerati</h1>
+                            <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur modi totam aspernatur.</p>
+                            <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, sequi!</p>
+                            <button class="btn-info">Ir al Sitio</button>
+                        </div>
+                    </div>
+                    <div class="card__portafolio">
+                        <img src="images/portafolio/funkos.jpg" alt="" class="card-img">
+                        <div class="card-portafolio__contenido">
+                            <h1 class="titulo">Tienda de Funkos</h1>
+                            <p class="subtitulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur modi totam aspernatur.</p>
+                            <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, sequi!</p>
+                            <button class="btn-info">Ir al Sitio</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--SECCION TRABAJO-->
+            <section id="TRABAJO">
+                <h1 class="h1-trabajo">Trabajo</h1>
+                <div class="trabajo">
+                    <div class="trabajo-slider">
+                        <div class="slide">
+                            <img src="images/trabajo/gcba.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/trabajo/coderhouse.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/trabajo/utn.png" alt="">
+                        </div>
+                        <div class="slide">
+                            <img src="images/trabajo/disefa.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!--SECCION TESTIMONIOS-->
+            <section id="TESTIMONIOS">
+                <h1 class="h1-testimonios">Algunos Testimonios</h1>
+                <div class="testimonios mySwiper">
+                    <div class="testi-content swiper-wrapper">
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>La verdad nada por agregar, el profesor explica muy bien y él y los tutores siempre están atentos a las dudas que puedan surgir, nos brindan ejemplos siempre que sea necesario y eso ayuda mucho a la comprensión del tema; además de todos tener siempre buena onda y mucha predisposicion.</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">Frameworks CSS + Bootstrap</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>Excelente las clases, se entiende que el profesor se esfuerza por nivelar a estudiantes que no tienen los mismos conocimientos, y a veces se vuelve medio repetitivo, pero los repasos sirven para reforzar lo aprendido en mi caso.</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">CSS</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>Axel es excelente profesor, muy buena onda. Nos ayuda siempre y responde hasta las preguntas más tontas, siempre está muy dispuesto a todo.</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">Conociendo a nuestro cliente</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>El profesor es muy claro en las explicaciones y tiene buena sintesis para explicar de forma completa.</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">CSS</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>se preocupa que todos captemos los conceptos esenciales y da herramientas para seguir creciendo</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">Servidores: tu sitio en línea</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>Buen maestro , focalizo temas importantes, despejo dudas , una maravilla el maestro</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">Flexbox</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>Una clase muy entretenida, dinámica y sobre todo informativa. Aprendí cosas y me entusiasma a seguir con el proyecto</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">HTML</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                        <div class="slide swiper-slide">
+                            <img src="images/testimonios/perfil.jpg" alt="" class="image">
+                            <p>La verdad que fue una clase muy buena, muy clara, y con grandes ejemplos. Ojalá que el profe esté como titular en el curso de JavaScript</p>
+
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+
+                            <div class="details">
+                                <span class="name">SASS</span>
+                                <span class="job">Coder House</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next nav-testi-btn"></div>
+                    <div class="swiper-button-prev nav-testi-btn"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--SECCION CONTACTO-->
+            <section id="CONTACTO">
+                <div class="contactForm">
+                    <div class="form">
+                        <div class="texto">
+                            <h2>¡Hablemos!</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid beatae vero id voluptatem laboriosam harum mollitia velit odit voluptatibus qui autem nostrum adipisci, veniam tenetur.</p>
+                        </div>
+
+                        <form action="https://formspree.io/f/xzblvape" method="POST">
+                            <div class="inputBox">
+                                <label for="">Tu Nombre</label>
+                                <input type="text" name="name" placeholder="Nombre...">
+                            </div>
+                            <div class="inputBox">
+                                <label for="">Tu Email</label>
+                                <input type="email" name="email" placeholder="Email...">
+                            </div>
+                            <div class="inputBox">
+                                <label for="">Tu Mensaje</label>
+                                <textarea name="" id="" cols="30" rows="5" name="message" placeholder="Mensaje..."></textarea>
+                            </div>
+                            <input type="submit" value="Enviar Mensaje">
+                        </form>
+                    </div>
+
+                    <div class="info">
+                        <div class="imgBox">
+                            <img src="images/contacto/email.png" alt="">
+                        </div>
+                        <div class="textBox">
+                            <div class="infoContact">
+                                <i class="fa-solid fa-envelope"></i> <p>hendersonaxel06@gmail.com</p>
+                            </div>
+                            <div class="infoContact">
+                                <i class="fa-solid fa-phone"></i> <p>+54 11-3155-5665</p>
+                            </div>
+                        </div>
+                        <div class="rrss">
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/axel-henderson/" class="fab fa-linkedin" target="_blank"></a>
+                <a href="https://github.com/AxelHB" class="fab fa-github-square" target="_blank"></a>
+                <a href="https://dev.to/axelhb" class="fab fa-dev" target="_blank"></a>
+                <a href="https://www.instagram.com/_axelhenderson/" class="fab fa-instagram-square" target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UCK5egQkAo75ru1zIuvgLGXA" class="fab fa-youtube" target="_blank"></a>
+            </div>
+            <ul class="list">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#SKILLS">Skills</a></li>
+                <li><a href="#PORTAFOLIO">Portafolio</a></li>
+                <li><a href="#TRABAJO">Trabajo</a></li>
+                <li><a href="#TESTIMONIOS">Testimonios</a></li>
+                <li><a href="#CONTACTO">Contacto</a></li>
+            </ul>
+            <p class="copyright">Axel Henderson Bianchi</p>
+        </footer>
+
+        
+        <!--AOS Animate JS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!--SWIPER JS TESTIMONIOS-->
+        <script src="js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script>
+        <!--SCRIPT INDEX-->
+        <script src="js/style.js"></script>
+
+    </body>
+</html>

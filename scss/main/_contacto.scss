@@ -1,0 +1,182 @@
+#CONTACTO {
+    background-color: #e0e0e0;
+    position: relative;
+    /*CENTRADO CON GRILLAS MAS RAPIDO*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
+}
+/*CONT FORM DE CONT*/
+.contactForm {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1), /* Sombra superior */
+                -2px 0 5px rgba(0, 0, 0, 0.1), /* Sombra izquierda */
+                2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra derecha */
+    border-radius: 30px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    .form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 85%;
+        margin-left: 30px;
+        form {
+            width: 100%;
+            /*CAJAS DE TEXTO*/
+            .inputBox {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+                /*ETIQUETAS E INPUTS*/
+                label {
+                    color: #1766a3;
+                    font-weight: 700;
+                }
+                input[type="text"],
+                input[type="email"],
+                textarea {
+                    border: none;
+                    background: #cbebfb;
+                    padding: 10px;
+                    border-radius: 15px;
+                    color: #1766a3;
+                    resize: none;
+                }
+                input[type="text"]:focus,
+                input[type="email"]:focus,
+                textarea:focus {
+                    outline: 2px solid #1766a3;
+                }
+            }
+            input[type="submit"] {
+                background: #1766a3;
+                display: inline-block;
+                text-align: center;
+                width: 250px;
+                padding: 10px;
+                border-radius: 15px;
+                color: #fff;
+                letter-spacing: 1px;
+                border: none;
+                cursor: pointer;
+                box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+                transition: 0.3s;
+            }
+            input[type="submit"]:hover {
+                background: #0b426c;
+            }
+        }
+        /*TIT Y DESCRIP*/
+        .texto h2 {
+            color: #1766a3;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .texto p {
+            color: #0b426c;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+    }
+    /*CONT DE INFO*/
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .imgBox {
+            position: relative;
+            width: 350px;
+            height: 350px;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .textBox {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            .infoContact {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 10px;
+                .fa-solid {
+                    font-size: 2em;
+                    margin-right: 10px;
+                    color: #0b426c;
+                }
+                p {
+                    color: #0b426c;
+                }
+            }
+        }
+        /*REDES SOCIALES*/
+        .rrss a {
+            padding: 20px;
+            font-size: 2em;
+            color: #1766a3;
+            transition: 0.3s;
+            :hover {
+                color: #0b426c;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+/*BREAKPOINT*/
+/*PANTALLAS LARGAS*/
+@media only screen and (max-width: 1280px) {
+    .contactForm {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width: 815px) {
+    #CONTACTO {
+        height: auto;
+    }
+    .contactForm .info {
+        height: auto;
+        padding: 20px;
+        .imgBox {
+            display: none;
+        }
+    }
+}
+
+/*CELULARES*/
+@media only screen and (max-width: 600px) {
+    .contactForm {
+        padding: 0;
+        gap: 0;
+    }
+    .contactForm .form {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .contactForm .info {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,169 @@
+/*FONT STYLE HEADER*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap');
+$font-header:'Nunito Sans', sans-serif;
+
+.header {
+    position: fixed;
+    top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    transition: 0.5s;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(5px);
+    // /*ANIMACION DEL HEADER*/
+    // background: rgb(0, 0, 0);
+    // backdrop-filter: blur(5px);
+    // animation: adjust-header linear both;
+    // animation-timeline: scroll();
+    // animation-range: 0 300px;
+}
+/*ANIMACION HEADER CON JS*/
+header.sticky {
+    background: #ffffffa8;
+    padding: 0 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    height: 60px;
+    border-bottom: 1.5px solid rgba(209, 213, 219, 0.3);
+    .logo {
+        color: black;
+    }
+    .navbar a {
+        color: black;
+    }
+    .navbar-redes a {
+        color: black;
+    }
+    .icons #menu-icon,
+    .icons #close-icon {
+        color: black;
+    }
+}
+
+/**/
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.589), transparent);
+    transition: .5s;
+}
+.header:hover::after {
+    left: 100%;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    font-family: $font-header;
+}
+
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: $font-header;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 2.8rem;
+    right: 5%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-redes a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar a{
+        color: rgb(255, 255, 255);
+    }
+    .icons {
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, 0.747);
+        backdrop-filter: blur(50px); 
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    header.sticky .navbar {
+        background-color: #ffffff9f;
+    }
+    
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;      
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0px);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+    
+}
