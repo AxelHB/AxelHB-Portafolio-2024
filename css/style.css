@@ -46,7 +46,7 @@ section {
   padding: 0 4%;
   max-width: 1440px;
   height: 100vh;
-  border-bottom: 2px solid rgb(129, 129, 129);
+  border-bottom: 2px solid rgba(129, 129, 129, 0.137);
 }
 
 #WSP {
@@ -95,9 +95,23 @@ header.sticky .logo {
 }
 header.sticky .navbar a {
   color: black;
+  transition: 0.3s;
+}
+header.sticky .navbar a:hover {
+  font-weight: 500;
+  font-size: 23px;
+  transition: 0.3s;
+  color: #062755;
 }
 header.sticky .navbar-redes a {
   color: black;
+  transition: 0.3s;
+}
+header.sticky .navbar-redes a:hover {
+  font-weight: 500;
+  font-size: 23px;
+  transition: 0.3s;
+  color: #062755;
 }
 header.sticky .icons #menu-icon,
 header.sticky .icons #close-icon {
@@ -143,6 +157,13 @@ header.sticky .icons #close-icon {
   font-weight: 500;
   margin-left: 2.5rem;
   font-family: "Nunito Sans", sans-serif;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  font-weight: 500;
+  font-size: 23px;
+  transition: 0.3s;
+  color: #062755;
 }
 
 #check {
@@ -161,6 +182,13 @@ header.sticky .icons #close-icon {
   color: #fff;
   font-size: 20px;
   margin-left: 5px;
+  transition: 0.3s;
+}
+.navbar-redes a:hover {
+  font-weight: 500;
+  font-size: 23px;
+  transition: 0.3s;
+  color: #062755;
 }
 
 /*RESPONSIVE*/
@@ -243,10 +271,13 @@ header.sticky .icons #close-icon {
   border-radius: 50%;
   margin: 0 8px;
   opacity: 0.75;
+  transition: 0.3s;
 }
 
 .footer .social a:hover {
   opacity: 0.9;
+  transition: 0.3s;
+  color: #062755;
 }
 
 .footer .list {
@@ -261,10 +292,15 @@ header.sticky .icons #close-icon {
 .footer .list li a {
   color: inherit;
   opacity: 0.8;
+  transition: 0.3s;
 }
 
 .footer .list li a:hover {
   opacity: 1;
+  transition: 0.3s;
+  color: #062755;
+  font-weight: 500;
+  font-size: 23px;
 }
 
 .footer .list li {
@@ -556,6 +592,36 @@ header.sticky .icons #close-icon {
   width: 80px;
 }
 
+/*EDICIÓN DE LOS BOTONES DE SKILLS*/
+.skill-link_lenguaje::before,
+.skill-link_framework::before,
+.skill-link_herramientas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #658aa0;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.skill-link_lenguaje:hover,
+.skill-link_framework:hover,
+.skill-link_herramientas:hover {
+  color: #e8e8e8;
+}
+
+.skill-link_lenguaje:hover::before,
+.skill-link_framework:hover::before,
+.skill-link_herramientas:hover::before {
+  width: 100%;
+}
+
 /*MEDIA QUERIES DE SKILLS*/
 @media (max-width: 1215px) {
   .skills {
@@ -669,7 +735,7 @@ header.sticky .icons #close-icon {
 }
 .modal__container-lenguajes .modal__close-lenguajes {
   color: white;
-  background-color: #f26250;
+  background-color: #658aa0;
   padding: 1em 3em;
   border: 1px solid white;
   border-radius: 6px;
@@ -678,7 +744,8 @@ header.sticky .icons #close-icon {
   transition: background-color 0.3s;
 }
 .modal__container-lenguajes .modal__close-lenguajes:hover {
-  color: #f26250;
+  font-weight: 500;
+  color: black;
   background-color: white;
 }
 
@@ -738,7 +805,7 @@ header.sticky .icons #close-icon {
 }
 .modal__container-framework .modal__close-framework {
   color: white;
-  background-color: #f26250;
+  background-color: #658aa0;
   padding: 1em 3em;
   border: 1px solid white;
   border-radius: 6px;
@@ -747,7 +814,8 @@ header.sticky .icons #close-icon {
   transition: background-color 0.3s;
 }
 .modal__container-framework .modal__close-framework:hover {
-  color: #f26250;
+  font-weight: 500;
+  color: black;
   background-color: white;
 }
 
@@ -807,7 +875,7 @@ header.sticky .icons #close-icon {
 }
 .modal__container-herramientas .modal__close-herramientas {
   color: white;
-  background-color: #f26250;
+  background-color: #658aa0;
   padding: 1em 3em;
   border: 1px solid white;
   border-radius: 6px;
@@ -816,7 +884,8 @@ header.sticky .icons #close-icon {
   transition: background-color 0.3s;
 }
 .modal__container-herramientas .modal__close-herramientas:hover {
-  color: #f26250;
+  font-weight: 500;
+  color: black;
   background-color: white;
 }
 
@@ -837,36 +906,6 @@ header.sticky .icons #close-icon {
   transition: all 250ms;
   overflow: hidden;
   cursor: pointer;
-}
-
-/*EDICIÓN DE LOS BOTONES DE SKILLS*/
-.skill-link_lenguaje::before,
-.skill-link_framework::before,
-.skill-link_herramientas::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0;
-  border-radius: 15px;
-  background-color: #658aa0;
-  z-index: -1;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-  transition: all 250ms;
-}
-
-.skill-link_lenguaje:hover,
-.skill-link_framework:hover,
-.skill-link_herramientas:hover {
-  color: #e8e8e8;
-}
-
-.skill-link_lenguaje:hover::before,
-.skill-link_framework:hover::before,
-.skill-link_herramientas:hover::before {
-  width: 100%;
 }
 
 /*MEDIA QUERIES*/
@@ -953,19 +992,33 @@ header.sticky .icons #close-icon {
   font-size: 20px;
   margin-bottom: 0.25rem;
 }
-.portafolio .card__portafolio1 .card__portafolio1-info h2,
-.portafolio .card__portafolio1 .card__portafolio2-info h2,
-.portafolio .card__portafolio1 .card__portafolio3-info h2,
-.portafolio .card__portafolio2 .card__portafolio1-info h2,
-.portafolio .card__portafolio2 .card__portafolio2-info h2,
-.portafolio .card__portafolio2 .card__portafolio3-info h2,
-.portafolio .card__portafolio3 .card__portafolio1-info h2,
-.portafolio .card__portafolio3 .card__portafolio2-info h2,
-.portafolio .card__portafolio3 .card__portafolio3-info h2 {
+.portafolio .card__portafolio1 .card__portafolio1-info h2 a,
+.portafolio .card__portafolio1 .card__portafolio2-info h2 a,
+.portafolio .card__portafolio1 .card__portafolio3-info h2 a,
+.portafolio .card__portafolio2 .card__portafolio1-info h2 a,
+.portafolio .card__portafolio2 .card__portafolio2-info h2 a,
+.portafolio .card__portafolio2 .card__portafolio3-info h2 a,
+.portafolio .card__portafolio3 .card__portafolio1-info h2 a,
+.portafolio .card__portafolio3 .card__portafolio2-info h2 a,
+.portafolio .card__portafolio3 .card__portafolio3-info h2 a {
   font-size: 16px;
   font-weight: 500;
   color: grey;
   margin-bottom: 0.75rem;
+  transition: 0.3s;
+}
+.portafolio .card__portafolio1 .card__portafolio1-info h2 a:hover,
+.portafolio .card__portafolio1 .card__portafolio2-info h2 a:hover,
+.portafolio .card__portafolio1 .card__portafolio3-info h2 a:hover,
+.portafolio .card__portafolio2 .card__portafolio1-info h2 a:hover,
+.portafolio .card__portafolio2 .card__portafolio2-info h2 a:hover,
+.portafolio .card__portafolio2 .card__portafolio3-info h2 a:hover,
+.portafolio .card__portafolio3 .card__portafolio1-info h2 a:hover,
+.portafolio .card__portafolio3 .card__portafolio2-info h2 a:hover,
+.portafolio .card__portafolio3 .card__portafolio3-info h2 a:hover {
+  color: #062755;
+  transition: 0.3s;
+  text-decoration: underline;
 }
 .portafolio .card__portafolio1 .card__portafolio1-info a,
 .portafolio .card__portafolio1 .card__portafolio2-info a,
@@ -979,6 +1032,19 @@ header.sticky .icons #close-icon {
   font-size: 30px;
   font-weight: 500;
   color: black;
+  transition: 0.3s;
+}
+.portafolio .card__portafolio1 .card__portafolio1-info a:hover,
+.portafolio .card__portafolio1 .card__portafolio2-info a:hover,
+.portafolio .card__portafolio1 .card__portafolio3-info a:hover,
+.portafolio .card__portafolio2 .card__portafolio1-info a:hover,
+.portafolio .card__portafolio2 .card__portafolio2-info a:hover,
+.portafolio .card__portafolio2 .card__portafolio3-info a:hover,
+.portafolio .card__portafolio3 .card__portafolio1-info a:hover,
+.portafolio .card__portafolio3 .card__portafolio2-info a:hover,
+.portafolio .card__portafolio3 .card__portafolio3-info a:hover {
+  transition: 0.3s;
+  color: #062755;
 }
 .portafolio .card__portafolio1 .card__portafolio1-info .fa-brands,
 .portafolio .card__portafolio1 .card__portafolio2-info .fa-brands,
@@ -1099,6 +1165,12 @@ header.sticky .icons #close-icon {
   border-radius: 30px;
   border: 1px solid rgba(209, 213, 219, 0.3);
   margin: 20px;
+  transition: 0.3s;
+}
+.trabajo .trabajo-img:hover {
+  transition: 0.3s;
+  transform: translateY(-10px); /* Mover la tarjeta hacia arriba */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Cambiar la sombra */
 }
 .trabajo .trabajo-img img {
   width: 100%;

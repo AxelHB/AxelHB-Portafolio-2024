@@ -23,10 +23,13 @@
     border-radius: 50%;
     margin: 0 8px;
     opacity: 0.75;
+    transition: .3s;
 }
 
 .footer .social a:hover {
     opacity: 0.9;
+    transition: .3s;
+    color: #062755;
 }
 
 .footer .list {
@@ -41,10 +44,15 @@
 .footer .list li a {
     color: inherit;
     opacity: 0.8;
+    transition: .3s;
 }
 
 .footer .list li a:hover {
     opacity: 1;
+    transition: .3s;
+    color: #062755;
+    font-weight: 500;
+    font-size: 23px;
 }
 
 .footer .list li {

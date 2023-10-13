@@ -52,16 +52,27 @@
                 font-size: 20px;
                 margin-bottom: .25rem;
             }
-            h2 {
+            h2 a{
                 font-size: 16px;
                 font-weight: 500;
                 color: grey;
                 margin-bottom: .75rem;
+                transition: .3s;
+                &:hover {
+                    color: #062755;
+                    transition: .3s;
+                    text-decoration: underline;
+                }
             }
             a {
                 font-size: 30px;
                 font-weight: 500;
                 color: black;
+                transition: .3s;
+                &:hover {
+                    transition: .3s;
+                    color: #062755;
+                }
             }
             .fa-brands {
                 font-size: 30px;

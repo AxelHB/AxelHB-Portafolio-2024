@@ -38,9 +38,23 @@ header.sticky {
     }
     .navbar a {
         color: black;
+        transition: .3s;
+        &:hover {
+            font-weight: 500;
+            font-size: 23px;
+            transition: .3s;
+            color: #062755;
+        }
     }
     .navbar-redes a {
         color: black;
+        transition: .3s;
+        &:hover {
+            font-weight: 500;
+            font-size: 23px;
+            transition: .3s;
+            color: #062755;
+        }
     }
     .icons #menu-icon,
     .icons #close-icon {
@@ -87,6 +101,13 @@ header.sticky {
     font-weight: 500;
     margin-left: 2.5rem;
     font-family: $font-header;
+    transition: .3s;
+    &:hover {
+        font-weight: 500;
+        font-size: 23px;
+        transition: .3s;
+        color: #062755;
+    }
 }
 
 #check {
@@ -105,6 +126,13 @@ header.sticky {
     color: #fff;
     font-size: 20px;
     margin-left: 5px;
+    transition: .3s;
+    &:hover {
+        font-weight: 500;
+        font-size: 23px;
+        transition: .3s;
+        color: #062755;
+    }
 }
 
 /*RESPONSIVE*/

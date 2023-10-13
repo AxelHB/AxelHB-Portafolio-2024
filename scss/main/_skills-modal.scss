@@ -50,7 +50,7 @@
     }
     .modal__close-lenguajes {
         color: white;
-        background-color: #f26250;
+        background-color: #658aa0;
         padding: 1em 3em;
         border: 1px solid white;
         border-radius: 6px;
@@ -58,7 +58,8 @@
         font-weight: 300;
         transition: background-color .3s;
         &:hover {
-            color: #f26250;
+            font-weight: 500;
+            color: black;
             background-color: white;
         }
     }
@@ -118,7 +119,7 @@
     }
     .modal__close-framework {
         color: white;
-        background-color: #f26250;
+        background-color: #658aa0;
         padding: 1em 3em;
         border: 1px solid white;
         border-radius: 6px;
@@ -126,7 +127,8 @@
         font-weight: 300;
         transition: background-color .3s;
         &:hover {
-            color: #f26250;
+            font-weight: 500;
+            color: black;
             background-color: white;
         }
     }
@@ -186,7 +188,7 @@
     }
     .modal__close-herramientas {
         color: white;
-        background-color: #f26250;
+        background-color: #658aa0;
         padding: 1em 3em;
         border: 1px solid white;
         border-radius: 6px;
@@ -194,7 +196,8 @@
         font-weight: 300;
         transition: background-color .3s;
         &:hover {
-            color: #f26250;
+            font-weight: 500;
+            color: black;
             background-color: white;
         }
     }
@@ -217,36 +220,6 @@
     transition: all 250ms;
     overflow: hidden;
     cursor: pointer;
-}
-
-/*EDICIÓN DE LOS BOTONES DE SKILLS*/
-.skill-link_lenguaje::before,
-.skill-link_framework::before,
-.skill-link_herramientas::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: #658aa0;
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
-}
-
-.skill-link_lenguaje:hover,
-.skill-link_framework:hover,
-.skill-link_herramientas:hover {
-    color: #e8e8e8;
-}
-
-.skill-link_lenguaje:hover::before,
-.skill-link_framework:hover::before,
-.skill-link_herramientas:hover::before {
-    width: 100%;
 }
 
 /*MEDIA QUERIES*/
