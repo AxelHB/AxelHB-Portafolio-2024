@@ -59,7 +59,7 @@
                 margin-bottom: .75rem;
                 transition: .3s;
                 &:hover {
-                    color: #062755;
+                    color: $color-opcional;
                     transition: .3s;
                     text-decoration: underline;
                 }
@@ -71,7 +71,7 @@
                 transition: .3s;
                 &:hover {
                     transition: .3s;
-                    color: #062755;
+                    color: $color-opcional;
                 }
             }
             .fa-brands {

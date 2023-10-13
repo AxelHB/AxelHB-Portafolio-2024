@@ -29,7 +29,7 @@
 .footer .social a:hover {
     opacity: 0.9;
     transition: .3s;
-    color: #062755;
+    color: $color-opcional;
 }
 
 .footer .list {
@@ -50,7 +50,7 @@
 .footer .list li a:hover {
     opacity: 1;
     transition: .3s;
-    color: #062755;
+    color: $color-opcional;
     font-weight: 500;
     font-size: 23px;
 }

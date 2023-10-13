@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*VARIABLES*/
+/*COLORES*/
 /*IMPORTS DEL RESET CSS*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap");
@@ -348,7 +350,7 @@ header.sticky .icons #close-icon {
 .perfil .perfil-contenido__titulos h1 {
   font-size: 40px;
   margin-bottom: 15px;
-  color: #183153;
+  color: var(#183153);
   text-shadow: 2px 2px #808080;
 }
 .perfil .maquina {
@@ -1418,7 +1420,7 @@ header.sticky .icons #close-icon {
   transition: 0.3s;
 }
 .contactForm .info .rrss a :hover {
-  color: #0b426c;
+  color: #062755;
   transition: 0.3s;
 }
 
