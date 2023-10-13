@@ -1,18 +1,35 @@
-
+#TRABAJO {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    background-color: #ebeaea;
+    padding: 20px 0;
+    .h1-trabajo {
+        color: #333;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
 
 .trabajo {
     width: 100%;
     height: auto;
-    margin: auto;
-    overflow: hidden;
-    .trabajo-slider {
-        display: flex;
-        justify-content: center;
-        .slide {
-            width: 300px;
-            img {
-                width: 100%;
-            }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .trabajo-img {
+        width: 300px;
+        background-color: rgba(255, 255, 255, 0.87);
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1), /* Sombra superior */
+                -2px 0 5px rgba(0, 0, 0, 0.1), /* Sombra izquierda */
+                2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra derecha */
+        border-radius: 30px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        margin: 20px;
+        img {
+            width: 100%;
         }
     }
 }

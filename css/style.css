@@ -882,9 +882,8 @@ header.sticky .icons #close-icon {
 }
 #PORTAFOLIO {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: auto;
+  height: 100vh;
   flex-direction: column;
   background-color: #ebeaea;
   padding: 20px 0;
@@ -899,89 +898,209 @@ header.sticky .icons #close-icon {
 
 .portafolio {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.card__portafolio {
-  width: 320px;
-  height: 400px;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-  margin: 25px;
-}
-.card__portafolio img {
-  width: 320px;
-  height: 500px;
-  border-radius: 15px;
-  background-position: center;
-}
-.card__portafolio .card-portafolio__contenido {
-  width: 100%;
   height: 100%;
-  top: 0;
-  right: -100%;
-  position: absolute;
-  background: rgba(17, 59, 59, 0.473);
-  backdrop-filter: blur(5px);
-  border-radius: 15px;
-  color: white;
-  padding: 30px;
+  padding: 0 4%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  transition: 1s;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.card__portafolio .card-portafolio__contenido .titulo {
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 500;
+.portafolio .card__portafolio1,
+.portafolio .card__portafolio2,
+.portafolio .card__portafolio3 {
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
 }
-.card__portafolio .card-portafolio__contenido .subtitulo {
-  text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 300;
+.portafolio .card__portafolio1 img,
+.portafolio .card__portafolio2 img,
+.portafolio .card__portafolio3 img {
+  width: 370px;
 }
-.card__portafolio .card-portafolio__contenido .info {
+.portafolio .card__portafolio1 .card__portafolio1-info,
+.portafolio .card__portafolio1 .card__portafolio2-info,
+.portafolio .card__portafolio1 .card__portafolio3-info,
+.portafolio .card__portafolio2 .card__portafolio1-info,
+.portafolio .card__portafolio2 .card__portafolio2-info,
+.portafolio .card__portafolio2 .card__portafolio3-info,
+.portafolio .card__portafolio3 .card__portafolio1-info,
+.portafolio .card__portafolio3 .card__portafolio2-info,
+.portafolio .card__portafolio3 .card__portafolio3-info {
+  text-align: center;
+  width: 80%;
+  background-color: white;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+  border-radius: 1.5rem;
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1s 1s;
+}
+.portafolio .card__portafolio1 .card__portafolio1-info span,
+.portafolio .card__portafolio1 .card__portafolio2-info span,
+.portafolio .card__portafolio1 .card__portafolio3-info span,
+.portafolio .card__portafolio2 .card__portafolio1-info span,
+.portafolio .card__portafolio2 .card__portafolio2-info span,
+.portafolio .card__portafolio2 .card__portafolio3-info span,
+.portafolio .card__portafolio3 .card__portafolio1-info span,
+.portafolio .card__portafolio3 .card__portafolio2-info span,
+.portafolio .card__portafolio3 .card__portafolio3-info span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 0.25rem;
+}
+.portafolio .card__portafolio1 .card__portafolio1-info h2,
+.portafolio .card__portafolio1 .card__portafolio2-info h2,
+.portafolio .card__portafolio1 .card__portafolio3-info h2,
+.portafolio .card__portafolio2 .card__portafolio1-info h2,
+.portafolio .card__portafolio2 .card__portafolio2-info h2,
+.portafolio .card__portafolio2 .card__portafolio3-info h2,
+.portafolio .card__portafolio3 .card__portafolio1-info h2,
+.portafolio .card__portafolio3 .card__portafolio2-info h2,
+.portafolio .card__portafolio3 .card__portafolio3-info h2 {
   font-size: 16px;
-  line-height: 25px;
-  margin: 40px 0;
-  font-weight: 400;
-}
-.card__portafolio .card-portafolio__contenido .btn-info {
-  width: 150px;
-  color: #1f3d47;
-  background: #8fabba;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: capitalize;
-  border: none;
-  outline: none;
   font-weight: 500;
-  cursor: pointer;
+  color: grey;
+  margin-bottom: 0.75rem;
+}
+.portafolio .card__portafolio1 .card__portafolio1-info a,
+.portafolio .card__portafolio1 .card__portafolio2-info a,
+.portafolio .card__portafolio1 .card__portafolio3-info a,
+.portafolio .card__portafolio2 .card__portafolio1-info a,
+.portafolio .card__portafolio2 .card__portafolio2-info a,
+.portafolio .card__portafolio2 .card__portafolio3-info a,
+.portafolio .card__portafolio3 .card__portafolio1-info a,
+.portafolio .card__portafolio3 .card__portafolio2-info a,
+.portafolio .card__portafolio3 .card__portafolio3-info a {
+  font-size: 30px;
+  font-weight: 500;
+  color: black;
+}
+.portafolio .card__portafolio1 .card__portafolio1-info .fa-brands,
+.portafolio .card__portafolio1 .card__portafolio2-info .fa-brands,
+.portafolio .card__portafolio1 .card__portafolio3-info .fa-brands,
+.portafolio .card__portafolio2 .card__portafolio1-info .fa-brands,
+.portafolio .card__portafolio2 .card__portafolio2-info .fa-brands,
+.portafolio .card__portafolio2 .card__portafolio3-info .fa-brands,
+.portafolio .card__portafolio3 .card__portafolio1-info .fa-brands,
+.portafolio .card__portafolio3 .card__portafolio2-info .fa-brands,
+.portafolio .card__portafolio3 .card__portafolio3-info .fa-brands {
+  font-size: 30px;
+  margin-left: 10px;
 }
 
-.card__portafolio:hover .card-portafolio__contenido {
-  right: 0;
+/*animacion del hover*/
+.card__portafolio1:hover .card__portafolio1-info,
+.card__portafolio2:hover .card__portafolio2-info,
+.card__portafolio3:hover .card__portafolio3-info {
+  animation: show-data 1s forwards;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card__portafolio1:hover,
+.card__portafolio2:hover,
+.card__portafolio3:hover {
+  animation: remove-overflow 2s forwards;
+}
+
+.card__portafolio1:not(:hover),
+.card__portafolio2:not(:hover),
+.card__portafolio3:not(:hover) {
+  animation: show-overflow 2s forwards;
+}
+
+.card__portafolio1:not(:hover) .card__portafolio1-info,
+.card__portafolio2:not(:hover) .card__portafolio2-info,
+.card__portafolio3:not(:hover) .card__portafolio3-info {
+  animation: remove-data 1s forwards;
+}
+
+/*ANIMACIÓN DE TARJETAS*/
+@keyframes show-data {
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(-7rem);
+  }
+}
+@keyframes remove-overflow {
+  to {
+    overflow: initial;
+  }
+}
+@keyframes remove-data {
+  0% {
+    transform: translateY(-7rem);
+  }
+  50% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+@keyframes show-overflow {
+  0% {
+    overflow: initial;
+    pointer-events: none;
+  }
+  50% {
+    overflow: hidden;
+  }
+}
+/*MEDIA QUERIES*/
+@media (max-width: 1337px) {
+  #PORTAFOLIO {
+    height: auto;
+  }
+}
+@media (max-width: 450px) {
+  .card__portafolio1 img,
+  .card__portafolio2 img,
+  .card__portafolio3 img {
+    width: 280px !important;
+  }
+}
+/*SMALL*/
+/*MEDIUM*/
+/*LARGE*/
+#TRABAJO {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  background-color: #ebeaea;
+  padding: 20px 0;
+}
+#TRABAJO .h1-trabajo {
+  color: #333;
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .trabajo {
   width: 100%;
   height: auto;
-  margin: auto;
-  overflow: hidden;
-}
-.trabajo .trabajo-slider {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.trabajo .trabajo-slider .slide {
+.trabajo .trabajo-img {
   width: 300px;
+  background-color: rgba(255, 255, 255, 0.87);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1), -2px 0 5px rgba(0, 0, 0, 0.1), 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra derecha */
+  border-radius: 30px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+  margin: 20px;
 }
-.trabajo .trabajo-slider .slide img {
+.trabajo .trabajo-img img {
   width: 100%;
 }
 
@@ -998,6 +1117,8 @@ header.sticky .icons #close-icon {
   color: #333;
   font-size: 40px;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .testimonios {
