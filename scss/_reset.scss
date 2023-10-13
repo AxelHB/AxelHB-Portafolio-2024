@@ -25,9 +25,6 @@ body { /*HACEMOS CON FLEX COLUMN Y MIN HEIGHT PARA QUE SIEMPRE OCUPE EL 100% DEL
     justify-content: center;
     flex-direction: column; /*FOOTER ABAJO*/
     min-height: 100vh; /*FOOTER ABAJO*/
-    background: linear-gradient(to bottom, #f0f0f0, #ffffff);
-    background-size: cover;
-    background-attachment: fixed;
     color: #333;
 }
 

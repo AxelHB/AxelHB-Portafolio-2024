@@ -1,3 +1,8 @@
+#PERFIL {
+    background: linear-gradient(to bottom, #b3c7ff, #fff5f5);
+    background-size: cover;
+    background-attachment: fixed;   
+}
 .perfil {
     width: 100%;
     height: 100%;
@@ -7,13 +12,90 @@
     /*EDICION DE PERFIL CON IMAGEN*/
     .perfil__img {
         position: relative;
+        width: 280px;
+        height: 377px;
+        overflow: hidden;
+        /*ANIMACIÓN TOP*/
+        span:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #3634a549);
+            animation: animate-1 2s linear infinite;
+        }
+        @keyframes animate-1 {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        /*ANIMACIÓN RIGHT*/
+        span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, #3634a549);
+            animation: animate-2 2s linear infinite;
+            animation-delay: 1s;
+        }
+        @keyframes animate-2 {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+        /*ANIMACIÓN BOTTOM*/
+        span:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to left, transparent, #3634a549);
+            animation: animate-3 2s linear infinite;
+            animation-delay: 1s;
+        }
+        @keyframes animate-3 {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        /*ANIMACIÓN LEFT*/
+        span:nth-child(4) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to left, transparent, #3634a549);
+            animation: animate-4 2s linear infinite;
+            animation-delay: 1s;
+        }
+        @keyframes animate-4 {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
         img {
-            width: 280px;
+            width: 100%;
             transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones de transformación y sombra */
         }
     }
-    .perfil__img:hover img {
-        transform: translateX(-5px) translateY(-5px) rotate(-2deg); /* Leve inclinación y elevación */
+    .perfil__img:hover img{
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombras adicionales */
     }
     /*EDICION DEL CONTENEDOR DE CONTENIDO*/
