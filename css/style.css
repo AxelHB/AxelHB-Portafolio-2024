@@ -394,6 +394,11 @@ header.sticky .icons #close-icon {
 }
 .perfil .perfil-contenido-redes a {
   margin-left: 30px;
+  transition: 0.3s;
+}
+.perfil .perfil-contenido-redes a:hover {
+  transition: 0.3s;
+  transform: translateY(-10px); /* Mover la tarjeta hacia arriba */
 }
 .perfil .perfil-contenido__parrafo p {
   font-size: 18px;

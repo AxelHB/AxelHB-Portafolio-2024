@@ -73,6 +73,11 @@
         margin-top: 40px;
         a {
             margin-left: 30px;
+            transition: .3s;
+            &:hover {
+                transition: .3s;
+                transform: translateY(-10px); /* Mover la tarjeta hacia arriba */
+            }
         }
     }
     /*CONTENIDO PARRAFO*/
