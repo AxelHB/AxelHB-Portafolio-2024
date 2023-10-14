@@ -320,7 +320,6 @@ header.sticky .icons #close-icon {
   background-image: url(../images/perfil/fondo1.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   padding: 0;
 }
 
@@ -621,6 +620,11 @@ header.sticky .icons #close-icon {
 .skills-framework img,
 .skills-herramientas img {
   width: 80px;
+}
+
+/*MARGEN DE LISTAS HERRAMIENTAS*/
+.skill-cont_herramientas {
+  margin-top: 10px;
 }
 
 /*EDICIÓN DE LOS BOTONES DE SKILLS*/
@@ -968,15 +972,15 @@ header.sticky .icons #close-icon {
 }
 @media (max-width: 530px) {
   .modal__container-lenguajes .modal__paragraph {
-    height: 250px;
+    height: 270px;
     overflow: auto;
   }
   .modal__container-framework .modal__paragraph {
-    height: 250px;
+    height: 270px;
     overflow: auto;
   }
   .modal__container-herramientas .modal__paragraph {
-    height: 250px;
+    height: 270px;
     overflow: auto;
   }
 }
