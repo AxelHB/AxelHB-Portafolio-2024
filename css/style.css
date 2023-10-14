@@ -12,6 +12,7 @@
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth; /*ANIMACION DEL SCROLL*/
   scroll-padding-top: 60px; /*SOLUCIÓN AL ANCLAJE POR ARRIBA*/
+  letter-spacing: 2px;
 }
 
 a,
@@ -316,17 +317,21 @@ header.sticky .icons #close-icon {
 
 /*IMPORTS DEL MAIN*/
 #PERFIL {
-  background: linear-gradient(to bottom, #b3c7ff, #fff5f5);
+  background-image: url(../images/perfil/fondo.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  padding: 0;
 }
 
 .perfil {
+  padding: 0 4%;
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  backdrop-filter: blur(3px);
   /*EDICION DE PERFIL CON IMAGEN*/
   /*EDICION DEL CONTENEDOR DE CONTENIDO*/
   /*ANIMACION TITULO*/
@@ -340,95 +345,21 @@ header.sticky .icons #close-icon {
   position: relative;
   width: 280px;
   height: 377px;
-  overflow: hidden;
-  /*ANIMACIÓN TOP*/
-  /*ANIMACIÓN RIGHT*/
-  /*ANIMACIÓN BOTTOM*/
-  /*ANIMACIÓN LEFT*/
-}
-.perfil .perfil__img span:nth-child(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to right, transparent, rgba(54, 52, 165, 0.2862745098));
-  animation: animate-1 2s linear infinite;
-}
-@keyframes animate-1 {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-.perfil .perfil__img span:nth-child(2) {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 3px;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, rgba(54, 52, 165, 0.2862745098));
-  animation: animate-2 2s linear infinite;
-  animation-delay: 1s;
-}
-@keyframes animate-2 {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(100%);
-  }
-}
-.perfil .perfil__img span:nth-child(3) {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(to left, transparent, rgba(54, 52, 165, 0.2862745098));
-  animation: animate-3 2s linear infinite;
-  animation-delay: 1s;
-}
-@keyframes animate-3 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.perfil .perfil__img span:nth-child(4) {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background: linear-gradient(to left, transparent, rgba(54, 52, 165, 0.2862745098));
-  animation: animate-4 2s linear infinite;
-  animation-delay: 1s;
-}
-@keyframes animate-4 {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
 }
 .perfil .perfil__img img {
   width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones de transformación y sombra */
+  transition: 0.3s;
 }
 .perfil .perfil__img:hover img {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombras adicionales */
+  transition: 0.3s;
+  transform: translateY(-10px); /* Mover la tarjeta hacia arriba */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Cambiar la sombra */
 }
 .perfil .perfil__contenido {
   width: 60%;
 }
 .perfil .perfil-contenido__titulos h1 {
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 15px;
   color: var(#183153);
   text-shadow: 2px 2px #808080;
@@ -452,14 +383,16 @@ header.sticky .icons #close-icon {
   }
 }
 .perfil .perfil-contenido__parrafo p {
+  margin-top: 30px;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 5px;
 }
 .perfil .perfil-contenido__cv {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 .perfil .perfil-contenido__cv .btn-perfil {
   position: relative;
@@ -538,7 +471,7 @@ header.sticky .icons #close-icon {
   padding: 20px 0;
 }
 #SKILLS .h1-skills {
-  color: #333;
+  color: #1766a3;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -811,6 +744,7 @@ header.sticky .icons #close-icon {
 }
 .modal__container-lenguajes .modal__title {
   font-size: 2.5rem;
+  color: rgb(98, 199, 111);
 }
 .modal__container-lenguajes .modal__paragraph {
   margin-bottom: 10px;
@@ -881,6 +815,7 @@ header.sticky .icons #close-icon {
 }
 .modal__container-framework .modal__title {
   font-size: 2.5rem;
+  color: rgb(98, 199, 111);
 }
 .modal__container-framework .modal__paragraph {
   margin-bottom: 10px;
@@ -951,6 +886,7 @@ header.sticky .icons #close-icon {
 }
 .modal__container-herramientas .modal__title {
   font-size: 2.5rem;
+  color: rgb(98, 199, 111);
 }
 .modal__container-herramientas .modal__paragraph {
   margin-bottom: 10px;
@@ -1010,7 +946,7 @@ header.sticky .icons #close-icon {
   padding: 20px 0;
 }
 #PORTAFOLIO .h1-portafolio {
-  color: #333;
+  color: #1766a3;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1074,30 +1010,30 @@ header.sticky .icons #close-icon {
   font-size: 20px;
   margin-bottom: 0.25rem;
 }
-.portafolio .card__portafolio1 .card__portafolio1-info h2 a,
-.portafolio .card__portafolio1 .card__portafolio2-info h2 a,
-.portafolio .card__portafolio1 .card__portafolio3-info h2 a,
-.portafolio .card__portafolio2 .card__portafolio1-info h2 a,
-.portafolio .card__portafolio2 .card__portafolio2-info h2 a,
-.portafolio .card__portafolio2 .card__portafolio3-info h2 a,
-.portafolio .card__portafolio3 .card__portafolio1-info h2 a,
-.portafolio .card__portafolio3 .card__portafolio2-info h2 a,
-.portafolio .card__portafolio3 .card__portafolio3-info h2 a {
+.portafolio .card__portafolio1 .card__portafolio1-info h3 a,
+.portafolio .card__portafolio1 .card__portafolio2-info h3 a,
+.portafolio .card__portafolio1 .card__portafolio3-info h3 a,
+.portafolio .card__portafolio2 .card__portafolio1-info h3 a,
+.portafolio .card__portafolio2 .card__portafolio2-info h3 a,
+.portafolio .card__portafolio2 .card__portafolio3-info h3 a,
+.portafolio .card__portafolio3 .card__portafolio1-info h3 a,
+.portafolio .card__portafolio3 .card__portafolio2-info h3 a,
+.portafolio .card__portafolio3 .card__portafolio3-info h3 a {
   font-size: 16px;
   font-weight: 500;
   color: grey;
   margin-bottom: 0.75rem;
   transition: 0.3s;
 }
-.portafolio .card__portafolio1 .card__portafolio1-info h2 a:hover,
-.portafolio .card__portafolio1 .card__portafolio2-info h2 a:hover,
-.portafolio .card__portafolio1 .card__portafolio3-info h2 a:hover,
-.portafolio .card__portafolio2 .card__portafolio1-info h2 a:hover,
-.portafolio .card__portafolio2 .card__portafolio2-info h2 a:hover,
-.portafolio .card__portafolio2 .card__portafolio3-info h2 a:hover,
-.portafolio .card__portafolio3 .card__portafolio1-info h2 a:hover,
-.portafolio .card__portafolio3 .card__portafolio2-info h2 a:hover,
-.portafolio .card__portafolio3 .card__portafolio3-info h2 a:hover {
+.portafolio .card__portafolio1 .card__portafolio1-info h3 a:hover,
+.portafolio .card__portafolio1 .card__portafolio2-info h3 a:hover,
+.portafolio .card__portafolio1 .card__portafolio3-info h3 a:hover,
+.portafolio .card__portafolio2 .card__portafolio1-info h3 a:hover,
+.portafolio .card__portafolio2 .card__portafolio2-info h3 a:hover,
+.portafolio .card__portafolio2 .card__portafolio3-info h3 a:hover,
+.portafolio .card__portafolio3 .card__portafolio1-info h3 a:hover,
+.portafolio .card__portafolio3 .card__portafolio2-info h3 a:hover,
+.portafolio .card__portafolio3 .card__portafolio3-info h3 a:hover {
   color: #062755;
   transition: 0.3s;
   text-decoration: underline;
@@ -1215,9 +1151,6 @@ header.sticky .icons #close-icon {
     width: 280px !important;
   }
 }
-/*SMALL*/
-/*MEDIUM*/
-/*LARGE*/
 #TRABAJO {
   display: flex;
   height: auto;
@@ -1226,7 +1159,7 @@ header.sticky .icons #close-icon {
   padding: 20px 0;
 }
 #TRABAJO .h1-trabajo {
-  color: #333;
+  color: #1766a3;
   font-size: 40px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1269,7 +1202,7 @@ header.sticky .icons #close-icon {
   padding: 20px;
 }
 #TESTIMONIOS .h1-testimonios {
-  color: #333;
+  color: #1766a3;
   font-size: 40px;
   text-align: center;
   margin-top: 20px;
@@ -1362,7 +1295,7 @@ header.sticky .icons #close-icon {
   }
 }
 #CONTACTO {
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   position: relative;
   /*CENTRADO CON GRILLAS MAS RAPIDO*/
   display: flex;
@@ -1376,6 +1309,7 @@ header.sticky .icons #close-icon {
 .contactForm {
   position: relative;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   gap: 20px;
   padding: 40px;
@@ -1483,8 +1417,11 @@ header.sticky .icons #close-icon {
 .contactForm .info .textBox .infoContact {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 10px;
+}
+.contactForm .info .textBox .infoContact img {
+  width: 80px;
 }
 .contactForm .info .textBox .infoContact .fa-solid {
   font-size: 2em;
@@ -1493,6 +1430,8 @@ header.sticky .icons #close-icon {
 }
 .contactForm .info .textBox .infoContact p {
   color: #0b426c;
+  font-size: 18px;
+  font-weight: bold;
 }
 .contactForm .info .rrss a {
   padding: 20px;
@@ -1516,6 +1455,9 @@ header.sticky .icons #close-icon {
 @media only screen and (max-width: 815px) {
   #CONTACTO {
     height: auto;
+  }
+  .contactForm {
+    padding: 20px 80px !important;
   }
   .contactForm .info {
     height: auto;

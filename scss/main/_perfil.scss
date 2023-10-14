@@ -1,109 +1,39 @@
 #PERFIL {
-    background: linear-gradient(to bottom, #b3c7ff, #fff5f5);
+    background-image: url(../images/perfil/fondo.jpg);
     background-size: cover;
-    background-attachment: fixed;   
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
 }
 .perfil {
+    padding: 0 4%;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    backdrop-filter: blur(3px);
     /*EDICION DE PERFIL CON IMAGEN*/
     .perfil__img {
         position: relative;
         width: 280px;
         height: 377px;
-        overflow: hidden;
-        /*ANIMACIÓN TOP*/
-        span:nth-child(1) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(to right, transparent, #3634a549);
-            animation: animate-1 2s linear infinite;
-        }
-        @keyframes animate-1 {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(100%);
-            }
-        }
-        /*ANIMACIÓN RIGHT*/
-        span:nth-child(2) {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 3px;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent, #3634a549);
-            animation: animate-2 2s linear infinite;
-            animation-delay: 1s;
-        }
-        @keyframes animate-2 {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
-                transform: translateY(100%);
-            }
-        }
-        /*ANIMACIÓN BOTTOM*/
-        span:nth-child(3) {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background: linear-gradient(to left, transparent, #3634a549);
-            animation: animate-3 2s linear infinite;
-            animation-delay: 1s;
-        }
-        @keyframes animate-3 {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-        /*ANIMACIÓN LEFT*/
-        span:nth-child(4) {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 3px;
-            height: 100%;
-            background: linear-gradient(to left, transparent, #3634a549);
-            animation: animate-4 2s linear infinite;
-            animation-delay: 1s;
-        }
-        @keyframes animate-4 {
-            0% {
-                transform: translateY(100%);
-            }
-            100% {
-                transform: translateY(-100%);
-            }
-        }
         img {
             width: 100%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones de transformación y sombra */
+            transition: .3s;
         }
     }
     .perfil__img:hover img{
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Sombras adicionales */
+        transition: .3s;
+        transform: translateY(-10px); /* Mover la tarjeta hacia arriba */
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Cambiar la sombra */
     }
     /*EDICION DEL CONTENEDOR DE CONTENIDO*/
     .perfil__contenido {
         width: 60%;
     }
     .perfil-contenido__titulos h1 {
-        font-size: 40px;
+        font-size: 35px;
         margin-bottom: 15px;
         color: var($color-principal);
         text-shadow: 2px 2px #808080;
@@ -134,15 +64,17 @@
     }
     /*CONTENIDO PARRAFO*/
     .perfil-contenido__parrafo p {
+        margin-top: 30px;
         font-size: 18px;
         font-weight: 600;
         text-align: center;
+        letter-spacing: 5px;
     }
     /*CONTENIDO BOTON*/
     .perfil-contenido__cv {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 80px;
         .btn-perfil {
             position: relative;
             display: flex;
