@@ -39,8 +39,9 @@
     transition: transform .3s;
     transition: var(--transition);
     .modal__img {
-        width: 90%;
-        max-width: 300px;
+        width: 30%;
+        min-width: 140px;
+        max-width: 220px;
     }
     .modal__title {
         font-size: 2.5rem;
@@ -109,7 +110,8 @@
     transition: transform .3s;
     transition: var(--transition);
     .modal__img {
-        width: 100%;
+        width: 30%;
+        min-width: 140px;
         max-width: 220px;
     }
     .modal__title {
@@ -135,8 +137,6 @@
         }
     }
 }
-
-
 /*MODAL DE SKILL FRAMEWORK*/
 .modal__herramientas {
     position: fixed;
@@ -179,8 +179,9 @@
     transition: transform .3s;
     transition: var(--transition);
     .modal__img {
-        width: 90%;
-        max-width: 300px;
+        width: 30%;
+        min-width: 140px;
+        max-width: 220px;
     }
     .modal__title {
         font-size: 2.5rem;
@@ -235,5 +236,30 @@
 
     .modal__title {
         font-size: 2rem !important;
+    }
+}
+@media (max-width: 800px) {
+    .modal__container-lenguajes,
+    .modal__container-framework,
+    .modal__container-framework {
+        padding: 2em 1.5em !important;
+    }
+
+    .modal__title {
+        font-size: 2rem !important;
+    }
+}
+@media (max-width: 530px) {
+    .modal__container-lenguajes .modal__paragraph {
+        height: 190px;
+        overflow: auto;
+    }
+    .modal__container-framework .modal__paragraph {
+        height: 220px;
+        overflow: auto;
+    }
+    .modal__container-herramientas .modal__paragraph {
+        height: 260px;
+        overflow: auto;
     }
 }

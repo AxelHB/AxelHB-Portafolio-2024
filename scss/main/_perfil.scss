@@ -1,5 +1,5 @@
 #PERFIL {
-    background-image: url(../images/perfil/fondo.jpg);
+    background-image: url(../images/perfil/fondo1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -21,6 +21,8 @@
         img {
             width: 100%;
             transition: .3s;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)); /* Degradado transparente a sólido */
+            border-radius: 50px;
         }
     }
     .perfil__img:hover img{
@@ -32,12 +34,14 @@
     .perfil__contenido {
         width: 60%;
     }
-    .perfil-contenido__titulos h1 {
-        font-size: 35px;
-        margin-bottom: 15px;
-        color: var($color-principal);
-        text-shadow: 2px 2px #808080;
-    }
+    .perfil-contenido__titulos {
+        height: 100px;
+        h1 {
+            font-size: 35px;
+            color: var($color-principal);
+            text-shadow: 2px 2px #808080;
+        }
+    } 
         /*ANIMACION TITULO*/
     /* Estilo base para el título */
     .maquina {
@@ -64,11 +68,11 @@
     }
     /*CONTENIDO PARRAFO*/
     .perfil-contenido__parrafo p {
-        margin-top: 30px;
         font-size: 18px;
         font-weight: 600;
         text-align: center;
         letter-spacing: 5px;
+        margin-top: 10px;
     }
     /*CONTENIDO BOTON*/
     .perfil-contenido__cv {
@@ -155,7 +159,13 @@
         .perfil__contenido {
             text-align: center;
             width: 100%;
+            padding-bottom: 20px;
         }
     }
     
+}
+@media (max-width: 500px) {
+    .perfil-contenido__titulos {
+        height: 134px !important;
+    } 
 }

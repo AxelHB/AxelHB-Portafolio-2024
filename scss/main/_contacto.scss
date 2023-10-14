@@ -101,7 +101,7 @@
         flex-direction: column;
         .imgBox {
             position: relative;
-            width: 350px;
+            width: 100%;
             height: 350px;
             img {
                 position: absolute;
@@ -109,10 +109,10 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
             }
         }
         .textBox {
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -173,6 +173,9 @@
         .imgBox {
             display: none;
         }
+        .textBox {
+            align-items: center;
+        }
     }
 }
 
@@ -188,5 +191,8 @@
     }
     .contactForm .info {
         margin-bottom: 30px;
+    }
+    .infoContact {
+        flex-direction: column;
     }
 }
