@@ -40,11 +40,11 @@
     grid-area: skills-lenguajes;
 }
 
-.skill-logo_lenguaje { grid-area: skill-logo_lenguaje; }
+.skill-logo_lenguaje { grid-area: skill-logo_lenguaje; margin: auto;}
 
-.skill-titulo_lenguaje { grid-area: skill-titulo_lenguaje; }
+.skill-titulo_lenguaje { grid-area: skill-titulo_lenguaje; margin: auto;}
 
-.skill-cont_lenguaje { grid-area: skill-cont_lenguaje; }
+.skill-cont_lenguaje { grid-area: skill-cont_lenguaje; margin: auto;}
 
 .skill-boton_lenguaje { grid-area: skill-boton_lenguaje; margin: auto;}
 
@@ -62,11 +62,11 @@
     grid-area: skills-framework;
 }
 
-.skill-logo_framework { grid-area: skill-logo_framework; }
+.skill-logo_framework { grid-area: skill-logo_framework; margin: auto;}
 
-.skill-titulo_framework { grid-area: skill-titulo_framework; }
+.skill-titulo_framework { grid-area: skill-titulo_framework; margin: auto;}
 
-.skill-cont_framework { grid-area: skill-cont_framework; }
+.skill-cont_framework { grid-area: skill-cont_framework; margin: auto;}
 
 .skill-boton_framework { grid-area: skill-boton_framework; margin: auto;}
 
@@ -84,11 +84,11 @@
     grid-area: skills-herramientas;
 }
 
-.skill-logo_herramientas { grid-area: skill-logo_herramientas; }
+.skill-logo_herramientas { grid-area: skill-logo_herramientas; margin: auto;}
 
-.skill-titulo_herramientas { grid-area: skill-titulo_herramientas; }
+.skill-titulo_herramientas { grid-area: skill-titulo_herramientas; margin: auto;}
 
-.skill-cont_herramientas { grid-area: skill-cont_herramientas; }
+.skill-cont_herramientas { grid-area: skill-cont_herramientas; margin: auto;}
 
 .skill-boton_herramientas { grid-area: skill-boton_herramientas; margin: auto;}
 
@@ -116,16 +116,18 @@
 .skills-framework {
     border-right: 2px solid rgba(66, 66, 66, 0.459);
 }
+
+/*IMAGEN PRINCIPAL*/
+.skills-lenguajes .skill-logo_lenguaje img,
+.skills-framework .skill-logo_framework img,
+.skills-herramientas .skill-logo_herramientas img {
+    width: 100px;
+}
 /*ICONOS*/
 .skills-lenguajes img,
 .skills-framework img,
 .skills-herramientas img {
     width: 80px;
-}
-
-/*MARGEN DE LISTAS HERRAMIENTAS*/
-.skill-cont_herramientas {
-    margin-top: 10px;
 }
 
 /*EDICIÓN DE LOS BOTONES DE SKILLS*/
@@ -176,17 +178,23 @@
         border-left: 1px solid rgba(121, 117, 117, 0.39);
         border-top: 1px solid rgba(121, 117, 117, 0.39);
         border-radius: 30px 0 0 0;
+        grid-template-rows: auto;
+        row-gap: 30px;
     }
     .skills-framework {
         border-top: 1px solid rgba(121, 117, 117, 0.39);
         border-right: 1px solid rgba(121, 117, 117, 0.39);
         border-radius: 0 30px 0 0;
+        grid-template-rows: auto;
+        row-gap: 30px;
     }
     .skills-herramientas {
         border-left: 1px solid rgba(121, 117, 117, 0.39);
         border-right: 1px solid rgba(121, 117, 117, 0.39);
         border-bottom: 1px solid rgba(121, 117, 117, 0.39);
         border-radius: 0 0 30px 30px;
+        grid-template-rows: auto;
+        row-gap: 30px;
     }
 }
 @media (max-width: 650px) {
@@ -224,11 +232,5 @@
         border-top: 1px solid rgba(121, 117, 117, 0.39);
         border-bottom: 1px solid rgba(121, 117, 117, 0.39);
         border-radius: 0 0 30px 30px;
-    }
-}
-
-@media (max-width: 400px) {
-    .skill-cont_herramientas {
-        margin-top: 50px;
     }
 }
