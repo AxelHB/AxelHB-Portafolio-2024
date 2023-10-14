@@ -484,7 +484,7 @@ header.sticky .icons #close-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 4%;
 }
 #SKILLS .h1-skills {
   color: #1766a3;
@@ -508,7 +508,7 @@ header.sticky .icons #close-icon {
 .skills-lenguajes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 125px 170px auto 80px;
+  grid-template-rows: 125px 190px auto 80px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "skill-logo_lenguaje skill-logo_lenguaje skill-logo_lenguaje" "skill-titulo_lenguaje skill-titulo_lenguaje skill-titulo_lenguaje" "skill-cont_lenguaje skill-cont_lenguaje skill-cont_lenguaje" "skill-boton_lenguaje skill-boton_lenguaje skill-boton_lenguaje";
@@ -536,7 +536,7 @@ header.sticky .icons #close-icon {
 .skills-framework {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 125px 170px auto 80px;
+  grid-template-rows: 125px 190px auto 80px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "skill-logo_framework skill-logo_framework skill-logo_framework" "skill-titulo_framework skill-titulo_framework skill-titulo_framework" "skill-cont_framework skill-cont_framework skill-cont_framework" "skill-boton_framework skill-boton_framework skill-boton_framework";
@@ -564,7 +564,7 @@ header.sticky .icons #close-icon {
 .skills-herramientas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 125px 170px auto 80px;
+  grid-template-rows: 125px 190px auto 80px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "skill-logo_herramientas skill-logo_herramientas skill-logo_herramientas" "skill-titulo_herramientas skill-titulo_herramientas skill-titulo_herramientas" "skill-cont_herramientas skill-cont_herramientas skill-cont_herramientas" "skill-boton_herramientas skill-boton_herramientas skill-boton_herramientas";
@@ -986,7 +986,7 @@ header.sticky .icons #close-icon {
   height: 100vh;
   flex-direction: column;
   background-color: #ebeaea;
-  padding: 20px 0;
+  padding: 20px 4%;
 }
 #PORTAFOLIO .h1-portafolio {
   color: #1766a3;
@@ -1242,7 +1242,7 @@ header.sticky .icons #close-icon {
   background-color: #ebeaea;
   flex-direction: column;
   height: auto;
-  padding: 20px;
+  padding: 20px 4%;
 }
 #TESTIMONIOS .h1-testimonios {
   color: #1766a3;
@@ -1436,6 +1436,7 @@ header.sticky .icons #close-icon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 0;
   /*REDES SOCIALES*/
 }
 .contactForm .info .imgBox {
@@ -1504,7 +1505,7 @@ header.sticky .icons #close-icon {
   }
   .contactForm .info {
     height: auto;
-    padding: 20px;
+    padding: 20px 10px 0px 10px;
   }
   .contactForm .info .imgBox {
     display: none;
@@ -1522,9 +1523,6 @@ header.sticky .icons #close-icon {
   .contactForm .form {
     margin-left: 0px;
     width: 100%;
-  }
-  .contactForm .info {
-    margin-bottom: 30px;
   }
   .infoContact {
     flex-direction: column;

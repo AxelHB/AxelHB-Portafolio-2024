@@ -99,6 +99,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin: 0;
         .imgBox {
             position: relative;
             width: 100%;
@@ -169,7 +170,7 @@
     }
     .contactForm .info {
         height: auto;
-        padding: 20px;
+        padding: 20px 10px 0px 10px;
         .imgBox {
             display: none;
         }
@@ -188,9 +189,6 @@
     .contactForm .form {
         margin-left: 0px;
         width: 100%;
-    }
-    .contactForm .info {
-        margin-bottom: 30px;
     }
     .infoContact {
         flex-direction: column;
