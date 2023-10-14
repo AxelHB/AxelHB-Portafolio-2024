@@ -508,7 +508,7 @@ header.sticky .icons #close-icon {
 .skills-lenguajes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 125px 190px auto 80px;
+  grid-template-rows: 125px 200px auto 80px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "skill-logo_lenguaje skill-logo_lenguaje skill-logo_lenguaje" "skill-titulo_lenguaje skill-titulo_lenguaje skill-titulo_lenguaje" "skill-cont_lenguaje skill-cont_lenguaje skill-cont_lenguaje" "skill-boton_lenguaje skill-boton_lenguaje skill-boton_lenguaje";
@@ -536,7 +536,7 @@ header.sticky .icons #close-icon {
 .skills-framework {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 125px 190px auto 80px;
+  grid-template-rows: 125px 200px auto 80px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "skill-logo_framework skill-logo_framework skill-logo_framework" "skill-titulo_framework skill-titulo_framework skill-titulo_framework" "skill-cont_framework skill-cont_framework skill-cont_framework" "skill-boton_framework skill-boton_framework skill-boton_framework";
@@ -564,7 +564,7 @@ header.sticky .icons #close-icon {
 .skills-herramientas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 125px 190px auto 80px;
+  grid-template-rows: 125px 200px auto 80px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas: "skill-logo_herramientas skill-logo_herramientas skill-logo_herramientas" "skill-titulo_herramientas skill-titulo_herramientas skill-titulo_herramientas" "skill-cont_herramientas skill-cont_herramientas skill-cont_herramientas" "skill-boton_herramientas skill-boton_herramientas skill-boton_herramientas";
@@ -968,15 +968,15 @@ header.sticky .icons #close-icon {
 }
 @media (max-width: 530px) {
   .modal__container-lenguajes .modal__paragraph {
-    height: 190px;
+    height: 250px;
     overflow: auto;
   }
   .modal__container-framework .modal__paragraph {
-    height: 220px;
+    height: 250px;
     overflow: auto;
   }
   .modal__container-herramientas .modal__paragraph {
-    height: 260px;
+    height: 250px;
     overflow: auto;
   }
 }

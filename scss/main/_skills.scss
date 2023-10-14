@@ -29,7 +29,7 @@
 /*GRILLA DE SKILL LENGUAJES*/
 .skills-lenguajes {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 125px 190px auto 80px;
+    grid-template-rows: 125px 200px auto 80px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -51,7 +51,7 @@
 /*GRILLA DE SKILL FRAMEWORK*/
 .skills-framework {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 125px 190px auto 80px;
+    grid-template-rows: 125px 200px auto 80px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -73,7 +73,7 @@
 /*GRILLA DE SKILL HERRAMIENTAS*/
 .skills-herramientas {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 125px 190px auto 80px;
+    grid-template-rows: 125px 200px auto 80px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
