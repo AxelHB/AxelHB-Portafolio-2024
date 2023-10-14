@@ -317,7 +317,7 @@ header.sticky .icons #close-icon {
 
 /*IMPORTS DEL MAIN*/
 #PERFIL {
-  background-image: url(../images/perfil/fondo.jpg);
+  background-image: url(../images/perfil/fondo4.jpg);
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -337,6 +337,7 @@ header.sticky .icons #close-icon {
   /* Estilo base para el título */
   /* Simula el cursor parpadeante */
   /* Animación del cursor parpadeante */
+  /*CONTENIDO REDES*/
   /*CONTENIDO PARRAFO*/
   /*CONTENIDO BOTON*/
 }
@@ -364,8 +365,9 @@ header.sticky .icons #close-icon {
 }
 .perfil .perfil-contenido__titulos h1 {
   font-size: 35px;
-  color: var(#183153);
-  text-shadow: 2px 2px #808080;
+  color: #0f4892;
+  text-shadow: 2px 2px rgba(100, 100, 100, 0.3215686275);
+  margin-top: 30px;
 }
 .perfil .maquina {
   display: inline-block;
@@ -385,17 +387,29 @@ header.sticky .icons #close-icon {
     opacity: 1;
   }
 }
+.perfil .perfil-contenido-redes {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.perfil .perfil-contenido-redes a {
+  margin-left: 30px;
+}
 .perfil .perfil-contenido__parrafo p {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 5px;
-  margin-top: 10px;
+  margin-top: 5px;
+  color: rgb(32, 32, 32);
+}
+.perfil .perfil-contenido__parrafo p img {
+  width: 40px;
 }
 .perfil .perfil-contenido__cv {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .perfil .perfil-contenido__cv .btn-perfil {
   position: relative;
@@ -465,6 +479,9 @@ header.sticky .icons #close-icon {
   .perfil {
     padding-top: 80px;
     flex-direction: column;
+  }
+  .perfil .perfil__img {
+    margin-top: 30px;
   }
   .perfil .perfil__contenido {
     text-align: center;
@@ -773,7 +790,7 @@ header.sticky .icons #close-icon {
 .modal__container-lenguajes .modal__img {
   width: 30%;
   min-width: 140px;
-  max-width: 220px;
+  max-width: 170px;
 }
 .modal__container-lenguajes .modal__title {
   font-size: 2.5rem;
@@ -845,7 +862,7 @@ header.sticky .icons #close-icon {
 .modal__container-framework .modal__img {
   width: 30%;
   min-width: 140px;
-  max-width: 220px;
+  max-width: 170px;
 }
 .modal__container-framework .modal__title {
   font-size: 2.5rem;
@@ -917,7 +934,7 @@ header.sticky .icons #close-icon {
 .modal__container-herramientas .modal__img {
   width: 30%;
   min-width: 140px;
-  max-width: 220px;
+  max-width: 170px;
 }
 .modal__container-herramientas .modal__title {
   font-size: 2.5rem;
@@ -1031,7 +1048,7 @@ header.sticky .icons #close-icon {
 .portafolio .card__portafolio1 img,
 .portafolio .card__portafolio2 img,
 .portafolio .card__portafolio3 img {
-  width: 370px;
+  width: 340px;
 }
 .portafolio .card__portafolio1 .card__portafolio1-info,
 .portafolio .card__portafolio1 .card__portafolio2-info,

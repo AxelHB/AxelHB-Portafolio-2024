@@ -1,5 +1,5 @@
 #PERFIL {
-    background-image: url(../images/perfil/fondo.jpg);
+    background-image: url(../images/perfil/fondo4.jpg);
     background-size: cover;
     background-position: center;
     padding: 0;
@@ -37,8 +37,9 @@
         height: 100px;
         h1 {
             font-size: 35px;
-            color: var($color-principal);
-            text-shadow: 2px 2px #808080;
+            color: $color-principal;
+            text-shadow: 2px 2px #64646452;
+            margin-top: 30px;
         }
     } 
         /*ANIMACION TITULO*/
@@ -65,19 +66,32 @@
         opacity: 1;
         }
     }
+    /*CONTENIDO REDES*/
+    .perfil-contenido-redes {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        a {
+            margin-left: 30px;
+        }
+    }
     /*CONTENIDO PARRAFO*/
     .perfil-contenido__parrafo p {
+        img {
+            width: 40px;
+        }
         font-size: 18px;
         font-weight: 600;
         text-align: center;
         letter-spacing: 5px;
-        margin-top: 10px;
+        margin-top: 5px;
+        color: rgb(32, 32, 32);
     }
     /*CONTENIDO BOTON*/
     .perfil-contenido__cv {
         display: flex;
         justify-content: center;
-        margin-top: 80px;
+        margin-top: 40px;
         .btn-perfil {
             position: relative;
             display: flex;
@@ -155,6 +169,9 @@
     .perfil {
         padding-top: 80px;
         flex-direction: column;
+        .perfil__img {
+            margin-top: 30px;
+        }
         .perfil__contenido {
             text-align: center;
             width: 100%;
