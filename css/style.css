@@ -406,6 +406,12 @@ header.sticky .icons #close-icon {
   overflow: hidden;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+.perfil .perfil-contenido__cv .btn-perfil:hover {
+  transition: 0.3s;
+  transform: translateY(-2px); /* Mover la tarjeta hacia arriba */
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Cambiar la sombra */
 }
 .perfil .perfil-contenido__cv .btn-perfil:after {
   content: " ";
